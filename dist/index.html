@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App Web Component</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script type="module" crossorigin src="/assets/index-214f4984.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <form method="get">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="col-md-4 mb-3">
+                <label class="form-label">Question 1</label>
+                <input-switch name='question-1'></input-switch>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label class="form-label">Question 2</label>
+                <input-switch name='question-2' checked></input-switch>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label class="form-label">Unchecked disabled</label>
+                <input-switch name='question-3' disabled></input-switch>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label class="form-label">Checked disabled</label>
+                <input-switch name='question-3' disabled checked></input-switch>
+              </div>
+              <div class="col-12 text-end">
+                <button class='btn btn-primary'>submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+
+</html>
