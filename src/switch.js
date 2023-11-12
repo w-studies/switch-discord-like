@@ -12,7 +12,8 @@ class InputSwitch extends HTMLElement {
       <div class="check-icon"></div>
     </label>`
 
-    const inputElement = inputSwitch.querySelector('input')
+    const inputElement = this.internals.nameinputSwitch.querySelector('input')
+    this.internals.inputElement = inputElement
 
     if (this.getAttribute('checked') !== null) {
       inputElement.setAttribute('checked', true)
@@ -143,7 +144,7 @@ class InputSwitch extends HTMLElement {
   }
 
   get value() {
-    return this.shadowRoot.querySelector('input').checked
+    return this.internals.inputElement.checked
   }
 
   get name() {
